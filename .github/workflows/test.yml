@@ -14,9 +14,3 @@ jobs:
         id: get_version
         run: |
          echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
-      - name: Commit
-        run: |
-          # Stage the file, commit and push
-          git add .
-          git commit -m "Added framework"
-          git push

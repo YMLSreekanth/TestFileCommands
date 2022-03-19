@@ -16,7 +16,7 @@ jobs:
          echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
       - name: Update Pod File
         run: |
-         
+         console.log(steps.get_version.outputs.VERSION )
          sed -i '' 's/${{ steps.get_version.outputs.VERSION }}/0.0.7/' ./TestCocoaPods_test_private.podspec
       - name: Commit
         run: |

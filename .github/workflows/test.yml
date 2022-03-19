@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@master
       - name: Update Pod File
         run: |
-         sed -i '' 's/spec/newSpec/' ./TestCocoaPods_test_private.podspec
+         sed -i '' 's/newSpec/oldSpec/' ./TestCocoaPods_test_private.podspec
       - name: Commit
         run: |
           # Stage the file, commit and push

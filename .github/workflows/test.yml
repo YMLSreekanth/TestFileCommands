@@ -16,7 +16,7 @@ jobs:
          echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
       - name: Update Pod File
         run: |
-         console.log("hello")
+         console.log("hello");
       - name: Commit
         run: |
           # Stage the file, commit and push

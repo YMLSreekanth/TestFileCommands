@@ -14,4 +14,8 @@ jobs:
         id: get_version
         run: |
          echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
-         console.log('hello');
+      - name: Export to ios-spm repository
+        uses: actions/github-script@v4
+        with:
+          script: |
+            console.log('TODO: This 👆');

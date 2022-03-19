@@ -13,7 +13,7 @@ jobs:
       - name: Get the version
         id: get_version
         run: |
-         echo ::set-output name=VERSION::${github.ref}
+         echo ::set-output name=VERSION::${{ github.head_ref }}
       - name: Export to ios-spm repository
         uses: actions/github-script@master
         with:

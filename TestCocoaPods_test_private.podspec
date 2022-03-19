@@ -1,12 +1,12 @@
 #
-#  Be sure to run `pod newSpec lint TestCocoaPods.podspec' to ensure this is a
-#  valid newSpec and to remove all comments including this before submitting the spec.
+#  Be sure to run `pod oldSpec lint TestCocoaPods.podspec' to ensure this is a
+#  valid oldSpec and to remove all comments including this before submitting the spec.
 #
-#  To learn more about PodnewSpec attributes see https://guides.cocoapods.org/syntax/podspec.html
-#  To see working PodnewSpecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
+#  To learn more about PodoldSpec attributes see https://guides.cocoapods.org/syntax/podspec.html
+#  To see working PodoldSpecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
-Pod::Spec.new do |newSpec|
+Pod::Spec.new do |oldSpec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -15,33 +15,33 @@ Pod::Spec.new do |newSpec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  newSpec.name         = "TestCocoaPods_test_private"
-  newSpec.version      = "0.0.2"
-  newSpec.summary      = "A short description of TestCocoaPods."
+  oldSpec.name         = "TestCocoaPods_test_private"
+  oldSpec.version      = "0.0.2"
+  oldSpec.summary      = "A short description of TestCocoaPods."
 
  
-  newSpec.description  = <<-DESC
+  oldSpec.description  = <<-DESC
 Test Description
                    DESC
 
-  newSpec.homepage     = "http://EXAMPLE/TestCocoaPods"
+  oldSpec.homepage     = "http://EXAMPLE/TestCocoaPods"
  
 
-  newSpec.license      = { :type => "MIT", :file => "LICENSE" }
+  oldSpec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
 
-  newSpec.author             = { "Aishwarya" => "aishwaryalaxmi.u@ymedialabs.com" }
+  oldSpec.author             = { "Aishwarya" => "aishwaryalaxmi.u@ymedialabs.com" }
   
 
 
  
-  newSpec.ios.deployment_target = "13.0"
+  oldSpec.ios.deployment_target = "13.0"
 
-  newSpec.ios.vendored_frameworks = 'TestCocoaPods.framework'
+  oldSpec.ios.vendored_frameworks = 'TestCocoaPods.framework'
 
-  newSpec.source       = { :http => "https://www.dropbox.com/s/n2ih9ok2fifgowd/TestCocoaPods.zip?dl=1" }
-  newSpec.exclude_files = "Classes/Exclude"
+  oldSpec.source       = { :http => "https://www.dropbox.com/s/n2ih9ok2fifgowd/TestCocoaPods.zip?dl=1" }
+  oldSpec.exclude_files = "Classes/Exclude"
 
 
 

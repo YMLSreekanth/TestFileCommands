@@ -15,7 +15,7 @@ jobs:
         run: |
          echo ::set-output name=VERSION::${GITHUB_REF#refs/*/}
       - name: Export to ios-spm repository
-        uses: actions/github-script@v4
+        uses: actions/github-script@master
         with:
           script: |
             console.log(${{ steps.get_version.outputs.VERSION }});

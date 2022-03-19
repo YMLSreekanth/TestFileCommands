@@ -10,9 +10,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
+      - name: Get the version
+        id: get_version
+        run: |
+         echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
       - name: Update Pod File
         run: |
-         sed -i '' 's/newSpec/oldSpec/' ./TestCocoaPods_test_private.podspec
+         
+         sed -i '' 's/${GITHUB_REF/refs\/tags\//}/0.0.7/' ./TestCocoaPods_test_private.podspec
       - name: Commit
         run: |
           # Stage the file, commit and push

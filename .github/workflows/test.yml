@@ -1,8 +1,8 @@
 name: CreateFramework
 on:
   push:
-    branches:
-    - master
+    tags:
+      - 'v*.*.*'
 jobs:
   build:
     name: Build XCFramework

@@ -1,12 +1,12 @@
 #
-#  Be sure to run `pod spec lint TestCocoaPods.podspec' to ensure this is a
-#  valid spec and to remove all comments including this before submitting the spec.
+#  Be sure to run `pod oldSpec lint TestCocoaPods.podspec' to ensure this is a
+#  valid oldSpec and to remove all comments including this before submitting the spec.
 #
-#  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
-#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
+#  To learn more about PodoldSpec attributes see https://guides.cocoapods.org/syntax/podspec.html
+#  To see working PodoldSpecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
-Pod::Spec.new do |spec|
+Pod::Spec.new do |oldSpec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -15,33 +15,33 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "TestCocoaPods_test_private"
-  spec.version      = "0.0.2"
-  spec.summary      = "A short description of TestCocoaPods."
+  oldSpec.name         = "TestCocoaPods_test_private"
+  oldSpec.version = "0.0.2"
+  oldSpec.summary      = "A short description of TestCocoaPods."
 
  
-  spec.description  = <<-DESC
+  oldSpec.description  = <<-DESC
 Test Description
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/TestCocoaPods"
+  oldSpec.homepage     = "http://EXAMPLE/TestCocoaPods"
  
 
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  oldSpec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
 
-  spec.author             = { "Aishwarya" => "aishwaryalaxmi.u@ymedialabs.com" }
+  oldSpec.author             = { "Aishwarya" => "aishwaryalaxmi.u@ymedialabs.com" }
   
 
 
  
-  spec.ios.deployment_target = "13.0"
+  oldSpec.ios.deployment_target = "13.0"
 
-  spec.ios.vendored_frameworks = 'TestCocoaPods.framework'
+  oldSpec.ios.vendored_frameworks = 'TestCocoaPods.framework'
 
-  spec.source       = { :http => "https://www.dropbox.com/s/n2ih9ok2fifgowd/TestCocoaPods.zip?dl=1" }
-  spec.exclude_files = "Classes/Exclude"
+  oldSpec.source       = { :http => "https://www.dropbox.com/s/n2ih9ok2fifgowd/TestCocoaPods.zip?dl=1" }
+  oldSpec.exclude_files = "Classes/Exclude"
 
 
 
